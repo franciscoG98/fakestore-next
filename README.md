@@ -17,6 +17,12 @@ Open [http://localhost:3000](http://localhost:3000)
 - [x] get products/categories
 - [x] cards with icons
 - [] filter products
-- [] single product detail page
+- [x] single product detail page
 - [] Responsive
 - [] searchbar like https://intro.co/marketplace
+- [] 
+- [] / inicio cards con categorias
+- [] /products todos los productos
+- [] 
+- [] 
+- [] 
