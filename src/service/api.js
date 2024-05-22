@@ -17,7 +17,7 @@ export const getCategories = async (id) => {
 };
 
 export const getCategoryProducts = async (category) => {
-  const res = await fetch(`https://fakestoreapi.com/products/${category}`);
+  const res = await fetch(`https://fakestoreapi.com/products/category/${category}`);
   const categoryProducts = await res.json();
   return categoryProducts;
 };
