@@ -29,13 +29,13 @@ export default function ProductDetailPage() {
 
 
   return (
-    <div className="w-1/2 m-auto mt-28 flex gap-8">
+    <div className="flex justify-center mt-32">
       <img
         src={image}
         alt={title}
         className="w-72"
       />
-      <section className="flex flex-col justify-between">
+      <section className="w-80 flex flex-col justify-between ml-8">
         <div className="flex flex-col">
           <h1 className="text-3xl font-bold">{title}</h1>
           <b className="uppercase pt-4">{category}</b>
@@ -52,7 +52,7 @@ export default function ProductDetailPage() {
             </div>
           </span>
         </div>
-        <Button className="w-fit px-8 text-md mx-auto mt-4 text-white bg-green-600 hover:bg-blue-600 hover:text-white" variant='outline'>Buy</Button>
+        <Button className="w-fit px-8 text-md mx-auto mt-8 text-white bg-green-600 hover:bg-blue-600 hover:text-white" variant='outline'>Buy</Button>
       </section>
     </div>
   );

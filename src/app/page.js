@@ -23,8 +23,8 @@ export default function Home() {
       <h1 className="text-3xl text-center mt-10">Choose category</h1>
       <div className="w-fit mx-auto grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8 mt-6 justify-items-center">
         {
-          categories.map(cat => (
-            <Link href={`/category/${cat}`}>
+          categories.map((cat, idx) => (
+            <Link href={`/category/${cat}`} key={idx}>
               <Card className="w-72 hover:bg-green-400 hover:duration-700 border-gray-500">
                 <CardHeader>
                   <CardTitle className="capitalize whitespace-nowrap text-center py-8">
