@@ -7,6 +7,7 @@ import {
 import { Star } from "lucide-react"
 import { Button } from "./ui/button"
 import Link from "next/link"
+import Image from "next/image"
 
 export function ProductCard({ id, rating, image, price, title }) {
 
@@ -23,10 +24,11 @@ export function ProductCard({ id, rating, image, price, title }) {
           {truncateTitle(title)}
         </CardTitle>
       </CardHeader>
-      <img
+      <Image
         src={image}
         alt={title}
-        className="w-72 h-64"
+        width={288}
+        height={256}
       />
       <CardFooter className="font-bold flex flex-col">
         <section className="w-full flex justify-between mt-4">

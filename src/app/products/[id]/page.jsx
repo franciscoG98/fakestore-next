@@ -5,6 +5,8 @@ import { getSingleProduct, getAllProducts } from "@/service/api";
 import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react"
 import { Searchbar } from "@/components/searchbar";
+import { ProductCard } from "@/components/productcard";
+import Image from "next/image"
 
 export default function ProductDetailPage() {
 
@@ -68,10 +70,10 @@ export default function ProductDetailPage() {
 
       {(!searchTouched || isInputEmpty) && (
         <div className="flex flex-col items-center  md:flex-row justify-center my-16 md:mt-32">
-          <img
+          <Image
             src={image}
             alt={title}
-            className="w-72"
+            width={288}
           />
           <section className="w-80 flex flex-col justify-between ml-8">
             <div className="flex flex-col">
