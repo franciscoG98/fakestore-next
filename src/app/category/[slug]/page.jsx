@@ -21,8 +21,19 @@ export default function ProductDetailPage() {
 
   return (
     <main>
-      <h1 className="text-2xl text-center mt-4 capitalize">Category <em>{slug}</em></h1>
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 gap-4 justify-items-center mt-8">
+      {
+        console.log(slug)
+      }
+      <h1 className="text-2xl text-center mt-4 capitalize">
+        <b>
+          {
+            slug.includes('%')
+            ? slug.replace('%20', ' ')  
+            : slug
+          }
+        </b>
+      </h1>
+      <div className="w-fit mx-auto grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 gap-8 justify-items-center my-8">
         {
           products?.map(prod => (
             <ProductCard

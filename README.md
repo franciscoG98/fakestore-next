@@ -16,13 +16,9 @@ Open [http://localhost:3000](http://localhost:3000)
 - [x] use Shadcn/ui, Tailwindcss, Nextjs 14, and FakeStore (products)
 - [x] get products/categories
 - [x] cards with icons
-- [] filter products
 - [x] single product detail page
+- [] filter products
 - [] Responsive
 - [] searchbar like https://intro.co/marketplace
-- [] 
-- [] / inicio cards con categorias
-- [] /products todos los productos
-- [] 
 - [] 
 - [] 
