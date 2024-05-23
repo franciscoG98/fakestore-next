@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Searchbar } from "@/components/searchbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,9 +12,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-          <Searchbar />
-          <main>{children}</main>
-        </body>
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
